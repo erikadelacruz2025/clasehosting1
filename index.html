@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnología Educativa - Educación Superior</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav {
+      background-color: #283593;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #5c6bc0;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tecnología Educativa en la Educación Superior</h1>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#autor">Sobre la autora</a>
+    <a href="#sociedad-contemporanea">Sociedad Contemporánea</a>
+    <a href="#sociedad-informacion">Sociedad de la Información</a>
+    <a href="#sociedad-conocimiento">Sociedad del Conocimiento</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Inicio</h2>
+      <p>La tecnología educativa en la educación superior juega un papel crucial para mejorar la calidad del aprendizaje. Esta comprende herramientas, plataformas, métodos digitales y recursos tecnológicos que facilitan la enseñanza y potencian la experiencia de los estudiantes.</p>
+    </section>
+
+    <section id="autor">
+      <h2>Sobre Erika Katherine De La Cruz Lindao</h2>
+      <p>Erika Katherine De La Cruz Lindao es estudiante de la Universidad Técnica de Machala (UTMACH), comprometida con la innovación educativa y el uso de las TIC para transformar el entorno de aprendizaje en la educación superior.</p>
+    </section>
+
+    <section id="sociedad-contemporanea">
+      <h2>Sociedad Contemporánea</h2>
+      <p>La sociedad contemporánea se caracteriza por el dinamismo tecnológico, la globalización y la constante evolución cultural, lo que exige a las instituciones educativas adaptar sus métodos a las nuevas necesidades sociales.</p>
+    </section>
+
+    <section id="sociedad-informacion">
+      <h2>Sociedad de la Información</h2>
+      <p>Esta sociedad se basa en el uso intensivo de la información y la comunicación digital. La educación superior debe preparar a los estudiantes para gestionar, evaluar y crear conocimiento a partir de la información disponible en el entorno digital.</p>
+    </section>
+
+    <section id="sociedad-conocimiento">
+      <h2>Sociedad del Conocimiento</h2>
+      <p>En la sociedad del conocimiento, el valor reside en el saber, la innovación y la creatividad. La educación superior tiene la misión de formar ciudadanos capaces de aportar soluciones inteligentes a los retos actuales y futuros.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div id="fecha-hora"></div>
+    <script>
+      function actualizarFechaHora() {
+        const ahora = new Date();
+        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const fecha = ahora.toLocaleDateString('es-ES', opciones);
+        const hora = ahora.toLocaleTimeString('es-ES');
+        document.getElementById('fecha-hora').textContent = `Fecha: ${fecha} | Hora: ${hora}`;
+      }
+      setInterval(actualizarFechaHora, 1000);
+      actualizarFechaHora();
+    </script>
+  </footer>
+</body>
+</html>
